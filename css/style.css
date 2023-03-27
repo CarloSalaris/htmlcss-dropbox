@@ -118,8 +118,15 @@ header, .jumbo, main, footer {
     border: dotted 5px purple;
 }
 
+.img-txt {
+    min-height: 200px;
+}
     .img-txt .img {
         background-color: burlywood;
+        width: 350px;
+    }
+    .img-txt .text {
+        width: 250px;
     }
 
     .col-block {

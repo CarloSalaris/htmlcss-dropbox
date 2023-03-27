@@ -10,10 +10,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.wrapper {
-    height: 100vh;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -21,4 +17,75 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.centered-wide {
+    padding: 65px 300px 10px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+    border-bottom: solid 1px rgb(199, 193, 193);
+}
+
+/* CONTENITORE jumbo + main + footer */
+.container {
+    height: calc(100% - 60px);
+    overflow: auto;
+}
+
+    /* JUMBOTRON */
+    .jumbo {
+        background-color: #b4d0e7;
+    }
+
+        /* blocco testo e img */
+        .img-txt {
+            display: flex;
+        }
+
+            /* parte di testo */
+            .img-txt .text {
+                flex-basis: 800px;
+            }
+
+            /* immagine */
+            .img-txt .img {
+                flex-basis: 1600px;
+            }
+                .img-txt .img img {
+                    width: 100%;
+                }
+
+    /* MAIN */
+
+
+    /* FOOTER */
+
+
+
+
+/* DEBUG */
+header div {
+    width: 35%;
+    border: dotted 1px purple;
+}
+
+.jumbo {
+    height: 550px;
 }

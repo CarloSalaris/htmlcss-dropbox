@@ -24,13 +24,21 @@ ul {
 }
 
 .centered-wide {
-    padding: 65px 300px 10px;
+    padding: 65px 20% 10px;
+}
+
+.centered-narrow {
+    padding: 65px 25% 10px;
 }
 
 h1 {
     font-size: 60px;
     font-weight: 800;
     margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 /* HEADER */
@@ -52,27 +60,42 @@ header {
     /* JUMBOTRON */
     .jumbo {
         background-color: #b4d0e7;
+        min-height: 700px;
     }
 
         /* blocco testo e img */
         .img-txt {
             display: flex;
         }
+        .img-txt .img img {
+            max-width: 100%;
+        }
 
             /* parte di testo */
-            .img-txt .text {
-                flex-basis: 800px;
+            .jumbo .img-txt .text {
+                width: 300px;
             }
 
             /* immagine */
-            .img-txt .img {
-                flex-basis: 1600px;
+            .jumbo .img-txt .img {
+                width: 700px;
             }
-                .img-txt .img img {
-                    width: 100%;
-                }
 
     /* MAIN */
+
+    /* sezione PLANS */
+    .col-block {
+        display:flex;
+    }
+
+    .col .header {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .col .content {
+        padding: 10px;
+    }
 
 
     /* FOOTER */
@@ -86,6 +109,30 @@ header div {
     border: dotted 1px purple;
 }
 
-.jumbo {
-    height: 550px;
+div, h1, .col {
+    border: dotted 1px purple;
+
 }
+
+header, .jumbo, main, footer {
+    border: dotted 5px purple;
+}
+
+    .img-txt .img {
+        background-color: burlywood;
+    }
+
+    .col-block {
+    border: dotted 3px orange;
+        
+    }
+        .col-block .col {
+            width: 300px;
+        }
+            .col-block .col .content {
+                min-height: 500px;
+            }
+
+    .col .content {
+        min-height: 100px;
+    }

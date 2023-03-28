@@ -24,6 +24,19 @@ li {
     margin: 10px 0;
 }
 
+button {
+    border: none;
+    color: #ffffff;
+    background-color: #0061ff;
+}
+
+button a {
+    display: inline-block;
+    height: 100%;
+    padding: 10px 20px;
+
+}
+
 .wrapper {
     height: 100vh;
 }
@@ -102,11 +115,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 70px;
     padding: 10px;
     border-bottom: solid 1px rgb(199, 193, 193);
     z-index: 900;
 }
+
+    header nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+        header nav .img {
+            margin-right: 20px;
+        }
+
+            header nav .img img {
+                max-height: 100%;
+            }
+
+        header nav ul {
+            display: flex;
+        }
+
+            header nav ul li {
+                margin: 0 20px;
+            }
 
 /* CONTENITORE jumbo + main + footer */
 .container {
@@ -340,39 +375,31 @@ header {
 
 
 /* DEBUG */
-header div {
+/* header div {
     min-width: 35%;
 }
-
 div, h1, .col {
     border: dotted 1px purple;
-
 }
-
 header, .jumbo, main, footer {
     border: dotted 3px purple;
 }
-
 section {
     border: dotted 3px green;
 }
-
 .img-txt {
     min-height: 200px;
 }
     .img-txt .img {
         background-color: burlywood;
     }
-
-    .col-block {
-    border: dotted 3px orange;
-        
-    }
+.col-block {
+border: dotted 3px orange;
     
+}
     .row .col .content {
         min-height: 500px;
     }
-
     .col .content {
         min-height: 100px;
-    }
+    } */

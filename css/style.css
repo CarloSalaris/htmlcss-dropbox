@@ -446,6 +446,10 @@ header {
                 height: 100%;
             }
 
+            #footer-nav .col h3,  #footer-nav .col li {
+                cursor: pointer;
+            }
+
         #footer-lang {
             color: #999999;
         }

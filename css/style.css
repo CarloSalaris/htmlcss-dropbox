@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 a {
@@ -43,20 +43,20 @@ button a {
 }
 
 .centered-wide {
-    width: 65%;
+    width: 70%;
     margin: auto;
     padding: 50px 0;
 }
 
 .centered-narrow {
-    width: 55%;
+    width: 60%;
     margin: auto;
     padding: 40px 0;
 
 }
 
 section {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -256,22 +256,30 @@ header {
                 color: #0061ff;
             }
 
+            /* Colonna bottom */
             .col.bottom .content {
                 display: flex;
                 justify-content: space-between;
             }
 
             .col-bottom-left {
-                max-width: 500px;
+                max-width: 560px;
             }
 
     /* sezione IMG-TEXT */
     main .img-txt .img {
         width: 60%;
     }
+    
     main .img-txt .text {
         width: 40%;
-        padding: 20px;
+        padding: 50px;
+    }
+
+    main .img-txt .text button {
+        color: inherit;
+        background-color: inherit;
+        border: solid 1px;
     }
 
     /* sezione CARDS */

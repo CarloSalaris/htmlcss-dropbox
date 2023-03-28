@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 a {
@@ -28,6 +28,7 @@ button {
     border: none;
     color: #ffffff;
     background-color: #0061ff;
+    margin-bottom: 30px;
 }
 
 button a {
@@ -75,10 +76,15 @@ h3 {
     margin-bottom: 20px;
 }
 
+p {
+    margin-bottom: 30px;
+}
+
 /* blocco testo e img */
 .img-txt {
     display: flex;
     width: 100%;
+    max-height: 100%;
 }
 .img-txt .img img {
     max-width: 100%;
@@ -127,6 +133,10 @@ header {
         align-items: center;
     }
 
+    header nav button {
+        margin-bottom: 0;
+    }
+
         header nav .img {
             margin-right: 20px;
         }
@@ -150,14 +160,10 @@ header {
 }
 
     /* JUMBOTRON */
-    .jumbo {
-        /* height: 750px; */
-        max-width: fit-content;
-    }
-
+   
     .jumbo .background {
-        /* height: 620px; */
-        min-height: 100%;
+        min-height: 600px;
+        /* min-height: 100%; */
     }
 
         .jumbo .centered-wide {
@@ -166,19 +172,30 @@ header {
             padding: 50px 0 0;
         }
 
-        .jumbo .img-txt {
-            overflow: none;
-        }
-    
-        /* parte di testo */
-        .jumbo .img-txt .text {
-            width: 30%;
-        }
+            .jumbo .img-txt {
+                height: 100%;
+            }
+        
+                /* parte di testo */
+                .jumbo .img-txt .text {
+                    width: 30%;
+                    max-height: 100%;
+                }
 
-        /* immagine */
-        .jumbo .img-txt .img {
-            width: 70%;
-        }
+                    #jumbo-arrow {
+                        font-size: 50px;
+                        margin-top: 10%;
+                    }
+
+                /* immagine */
+                .jumbo .img-txt .img {
+                    width: 70%;
+                    position: relative;
+                }
+
+                .jumbo .img-txt .img img {
+                    position: absolute;
+                }
 
     /* MAIN */
   

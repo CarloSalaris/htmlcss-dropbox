@@ -21,7 +21,11 @@ ul {
 }
 
 li {
-    margin: 10px 0;
+    margin: 20px 0;
+}
+
+i {
+    margin: 0 5px;
 }
 
 button {
@@ -67,7 +71,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 21px;
     margin-bottom: 20px;
 }
 
@@ -156,32 +160,28 @@ header {
         .jumbo .centered-wide {
             padding-bottom: 0;
         }
-
-            .jumbo .img-txt {
-                height: 100%;
+            
+            /* parte di testo */
+            .jumbo .img-txt .text {
+                width: 30%;
             }
-        
-                /* parte di testo */
-                .jumbo .img-txt .text {
-                    width: 30%;
+
+                #jumbo-arrow {
+                    font-size: 50px;
+                    margin-top: 35px;
                 }
 
-                    #jumbo-arrow {
-                        font-size: 50px;
-                        margin-top: 2vw;
-                    }
+            /* immagine */
+            .jumbo .img-txt .img {
+                width: 70%;
+                min-width: 700px;
+                max-width: 800px;
+                position: relative;
+            }
 
-                /* immagine */
-                .jumbo .img-txt .img {
-                    width: 70%;
-                    min-width: 700px;
-                    max-width: 800px;
-                    position: relative;
-                }
-
-                .jumbo .img-txt .img img {
-                    position: absolute;
-                }
+            .jumbo .img-txt .img img {
+                position: absolute;
+            }
 
     /* MAIN */
   
@@ -201,6 +201,7 @@ header {
                 align-items: center;
                 margin-right: 40px;
             }
+
                 .check {
                     display: inline-block;
                     width: 20px;
@@ -221,14 +222,48 @@ header {
         } 
         .col .header {
             text-align: center;
-            padding: 5px;
+            padding: 10px;
             border-bottom: solid 1px #dedede;
-
         }
 
         .col .content {
-            padding: 10px;
+            padding: 20px;
         }
+
+            .col .content .plan-type {
+            margin-bottom: 50px;
+            }
+
+            .col .content ul {
+                margin: 30px 0;
+            }
+                .col .content li {
+                    display: flex;
+                    align-items: baseline;
+                }
+            
+            .col .content .centered {
+                text-align: center;
+            }
+            
+            .col .content .short-line {
+                width: 50px;
+                color: #dedede;
+                margin: 40px 0;
+            }
+
+            .col .content ul .fa-check {
+                color: #0061ff;
+            }
+
+            .col.bottom .content {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .col-bottom-left {
+                max-width: 500px;
+            }
 
     /* sezione IMG-TEXT */
     main .img-txt .img {

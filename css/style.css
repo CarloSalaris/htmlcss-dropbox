@@ -172,6 +172,11 @@ header {
             align-items: center;
             margin: 0 20px;
             height: 100%;
+            cursor: pointer;
+        }
+
+        header nav ul li:hover {
+            border-bottom: 2px solid black;
         }
 
     /* JUMBOTRON */

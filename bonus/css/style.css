@@ -146,6 +146,7 @@ header {
     header nav button.hidden-bg {
         background-color: inherit;
         color: inherit;
+        margin-right: 20px;
     }
 
     header nav button.hidden-bg:hover {

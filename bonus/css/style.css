@@ -503,9 +503,12 @@ header {
 
             .faq-row-hidden {
                 padding: 30px;
+                margin-bottom: 30px;
                 z-index: 800;
                 background-color: #f3f4f5;
+                border-radius: 20px;
                 display: none;
+                animation: fade .5s;
             }
 
                 .faq-row-hidden p {
@@ -513,7 +516,11 @@ header {
                 }
         
         .faq-row-flex:hover{
-            color: #0061ff;
+            color:#999999;
+        }
+
+        .faq-row-flex:active{
+            color: inherit;
         }
 
         .faq-row:active .faq-row-hidden {

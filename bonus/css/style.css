@@ -179,7 +179,7 @@ header {
                 position: absolute;
                 left: 0;
                 top: 70px;
-                height: 150px;
+                min-height: 150px;
                 width: 300px;
                 background-color: #f3f4f5;
                 display: none;
@@ -222,7 +222,7 @@ header {
             }
 
                 #jumbo-arrow {
-                    margin-top: 50px;
+                    margin-top: 60px;
                 }
                     #jumbo-arrow a {
                         font-size: 48px;
@@ -244,7 +244,8 @@ header {
   
     /* sezione PLANS */
     .col-block {
-        margin-top: 100px;
+        margin-top: 50px;
+        padding-top: 50px;
     }
         
         /* selezione fatturazione */

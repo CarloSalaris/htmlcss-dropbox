@@ -242,7 +242,7 @@ header {
             }
 
             .col .content ul {
-                margin: 50px 0;
+                margin: 30px 0 50px;
             }
                 .col .content li {
                     display: flex;
@@ -271,7 +271,7 @@ header {
             }
 
             .col-bottom-left {
-                max-width: 560px;
+                max-width: 600px;
             }
 
     /* sezione IMG-TEXT */

@@ -252,6 +252,10 @@ header {
             .col .content .centered {
                 text-align: center;
             }
+
+            .col .content button {
+                width: 80%;
+            }
             
             .col .content .short-line {
                 width: 50px;

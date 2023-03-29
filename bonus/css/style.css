@@ -179,8 +179,8 @@ header {
                 background-color: #f3f4f5;
             }
 
-            /*Hidden info nav header on click*/
-            .hidden-header{
+            /*Hidden info show on :hover*/
+            .hidden{
                 position: absolute;
                 left: 0;
                 top: 70px;
@@ -202,7 +202,7 @@ header {
                 }
             }
 
-            header nav ul li:hover .hidden-header{
+            header nav ul li:hover .hidden{
                 display: inline-block;
                 opacity: 1;
             }

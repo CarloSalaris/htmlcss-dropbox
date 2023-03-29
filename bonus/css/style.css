@@ -180,7 +180,7 @@ header {
             }
 
             /*Hidden info show on :hover*/
-            .hidden{
+            .hidden-absolute{
                 position: absolute;
                 left: 0;
                 top: 70px;
@@ -190,6 +190,7 @@ header {
                 display: none;
                 opacity: 0;
                 animation: fade .3s;
+                z-index: 900;
             }
 
             @keyframes fade {
@@ -202,7 +203,7 @@ header {
                 }
             }
 
-            header nav ul li:hover .hidden{
+            header nav ul li:hover .hidden-absolute{
                 display: inline-block;
                 opacity: 1;
             }
@@ -480,18 +481,52 @@ header {
         }
 
         .faq-row {
+            border-bottom: 1px solid;
+        }
+
+        .faq-row-flex {
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 80px;
-            border-bottom: 1px solid;
+            cursor: pointer;
         }
-
-            .faq-row span {
+           
+            /* Angle up/down */
+            .faq-row-flex span {
                 margin-right: 30px;
-                cursor: pointer;
             }
 
+            .faq-row-flex span .fa-angle-up {
+                display: none;
+            }
+
+            .faq-row-hidden {
+                padding: 30px;
+                z-index: 800;
+                background-color: #f3f4f5;
+                display: none;
+            }
+
+                .faq-row-hidden p {
+                    margin: 0;
+                }
+        
+        .faq-row-flex:hover{
+            color: #0061ff;
+        }
+
+        .faq-row:active .faq-row-hidden {
+            display: inline-block;
+        }
+
+        .faq-row:active .fa-angle-up {
+            display: inline-block;
+        }
+
+        .faq-row:active .fa-angle-down {
+            display: none;
+        }
 
     /* FOOTER */
     footer {

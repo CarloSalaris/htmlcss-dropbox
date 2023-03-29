@@ -143,17 +143,6 @@ header {
         height: 100%;
     }
 
-    header nav button.hidden-bg {
-        background-color: inherit;
-        color: inherit;
-        margin-right: 20px;
-    }
-
-    header nav button.hidden-bg:hover {
-        background-color:#8fc1ee;
-        color: #ffffff;
-    }
-
     header nav button {
         margin-bottom: 0;
     }
@@ -169,16 +158,51 @@ header {
     }
 
         header nav ul li {
+            position: relative;
             display: flex;
             align-items: center;
+            padding: 0 10px;
             margin: 0 20px;
             height: 100%;
             cursor: pointer;
+            transition: all .3s;
+
         }
 
-        header nav ul li:hover {
-            border-bottom: 1px solid black;
-        }
+            header nav ul li:hover {
+                border-bottom: 1px solid black;
+                background-color: #f3f4f5;
+            }
+
+            /*Hidden info nav header on click*/
+            .hidden-header{
+                position: absolute;
+                left: 0;
+                top: 70px;
+                height: 150px;
+                width: 300px;
+                background-color: #f3f4f5;
+                display: none;
+                opacity: 0;
+                animation: fade .3s;
+            }
+
+            @keyframes fade {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            header nav ul li:hover .hidden-header{
+                display: inline-block;
+                opacity: 1;
+            }
+
+            
 
     /* JUMBOTRON */
     

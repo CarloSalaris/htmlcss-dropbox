@@ -85,8 +85,13 @@ h3 {
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 
 p {
@@ -217,6 +222,8 @@ header {
             display: flex;
             padding: 10px;
             cursor: auto;
+            font-size: 12px;
+
         }
 
         .hidden-container ul {
@@ -237,9 +244,15 @@ header {
         }
 
         .col-hidden {
-            min-width: 250px;
+            min-width: 200px;
             padding: 10px;
         }
+
+            .nav-logo {
+                min-width: 34px;
+                margin-right: 10px;
+                text-align: center;
+            }
 
             
 

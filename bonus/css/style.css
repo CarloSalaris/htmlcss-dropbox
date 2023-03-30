@@ -85,12 +85,12 @@ h3 {
 }
 
 h4 {
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 10px;
 }
 
 h5 {
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 5px;
 }
 
@@ -221,6 +221,7 @@ header {
         .hidden-container {
             display: flex;
             padding: 10px;
+            min-width: 280px;            
             cursor: auto;
             font-size: 12px;
 

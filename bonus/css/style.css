@@ -53,15 +53,15 @@ button a {
 }
 
 .centered-wide {
-    width: 70%;
+    max-width: 1200px;
     margin: auto;
-    padding: 50px 0;
+    padding: 50px 30px;
 }
 
 .centered-narrow {
-    width: 60%;
+    max-width: 1000px;
     margin: auto;
-    padding: 40px 0;
+    padding: 40px 30px;
 
 }
 
@@ -152,7 +152,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 1500px;
+        width: 1550px;
         height: 100%;
     }
 
@@ -440,7 +440,9 @@ header {
         /* slider quadrati */
         .slider {
             display: flex;
-        margin-top: 80px;
+            margin-top: 80px;
+            width: 1550px;
+
         }
 
             .macro-sq {

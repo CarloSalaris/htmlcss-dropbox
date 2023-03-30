@@ -87,6 +87,7 @@ h3 {
 
 h4 {
     font-size: 13px;
+    padding: 10px;
     margin-bottom: 10px;
 }
 
@@ -207,8 +208,8 @@ header {
                 position: absolute;
                 left: 0;
                 top: 70px;
-                min-height: 100px;
-                min-width: 200px;
+                /* min-height: 100px; */
+                /* min-width: 200px; */
                 background-color: #f3f4f5;
                 display: none;
                 opacity: 0;
@@ -233,23 +234,23 @@ header {
 
         .hidden-container {
             display: flex;
-            padding: 10px;
-            min-width: 280px;            
+            min-width: 260px;            
             cursor: auto;
             font-size: 12px;
+            padding: 10px 0;
 
         }
 
         .hidden-container ul {
         display: inline-block;
-        width: 100%;
+        min-width: 100%;
         }
 
         .hidden-container ul li {
             margin: 0;
-            padding: 10px 0;
+            padding: 10px;
             height: auto;
-            width: 100%;
+            min-width: 100%;
         }
 
         .hidden-container ul li:hover {
@@ -259,14 +260,19 @@ header {
 
         .col-hidden {
             min-width: 200px;
-            padding: 10px;
+            width: 100%;
         }
 
             .nav-logo {
-                min-width: 34px;
+                min-width:fit-content;
+                padding: 10px;
                 margin-right: 10px;
                 text-align: center;
             }
+
+                .nav-logo svg {
+                    width: 34px;
+                }
 
             
 

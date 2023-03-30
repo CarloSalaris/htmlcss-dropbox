@@ -348,6 +348,10 @@ header {
                     margin-right: 5px;
                 }
 
+            .payment-select:hover .check {
+                filter: opacity(.5);
+            }
+
                 /* check selezionato */
                 .check.selected {
                     box-shadow: inset 0 0 0 4px #0061ff;
